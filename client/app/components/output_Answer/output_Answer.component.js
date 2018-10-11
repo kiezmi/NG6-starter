@@ -3,7 +3,7 @@ import './output_Answer.scss';
 
 let output_AnswerComponent = {
   bindings: {
-    answersArray: '<'
+    answers: '<'
   },
   template,
 };
