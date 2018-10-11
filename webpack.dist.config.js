@@ -20,7 +20,7 @@ config.plugins = config.plugins.concat([
       // angular global variable, so we should keep it unchanged
       except: ['$super', '$', 'exports', 'require', 'angular']
     }
-  })
+  }) 
 ]);
 
 module.exports = config;

@@ -3,12 +3,13 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
+import Respuestas from './answers';
 import 'normalize.css';
 
 angular.module('app', [
     uiRouter,
-    Common,
-    Components
+    Components,
+    Respuestas
   ])
   .config(($locationProvider) => {
     "ngInject";
@@ -16,5 +17,7 @@ angular.module('app', [
     // #how-to-configure-your-server-to-work-with-html5mode
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
+  
+
 
   .component('app', AppComponent);

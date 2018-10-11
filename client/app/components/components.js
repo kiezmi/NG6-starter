@@ -1,15 +1,10 @@
 import angular from 'angular';
-import Home from './home/home';
-import About from './about/about';
-import Kiezmi from './Kiezmi/Kiezmi.component';
-import Input from './Input/Input.component';
+import InputQuestion from './input_Question/input_Question';
+import OutputAnswer from './output_Answer/output_Answer';
 
 let componentModule = angular.module('app.components', [
-  Home,
-  About,
-  Kiezmi,
-  Input
-  
+  InputQuestion,
+  OutputAnswer
 ])
 
 .name;

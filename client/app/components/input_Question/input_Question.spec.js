@@ -1,16 +1,16 @@
-import InputModule from './Input';
-import InputController from './Input.controller';
-import InputComponent from './Input.component';
-import InputTemplate from './Input.html';
+import Input_QuestionModule from './input_Question';
+import Input_QuestionController from './input_Question.controller';
+import Input_QuestionComponent from './input_Question.component';
+import Input_QuestionTemplate from './input_Question.html';
 
-describe('Input', () => {
+describe('Input_Question', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(InputModule));
+  beforeEach(window.module(Input_QuestionModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new InputController();
+      return new Input_QuestionController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Input', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(InputTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(Input_QuestionTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
     // component/directive specs
-    let component = InputComponent;
+    let component = Input_QuestionComponent;
 
     it('includes the intended template', () => {
-      expect(component.template).to.equal(InputTemplate);
+      expect(component.template).to.equal(Input_QuestionTemplate);
     });
 
     it('invokes the right controller', () => {
-      expect(component.controller).to.equal(InputController);
+      expect(component.controller).to.equal(Input_QuestionController);
     });
   });
 });
