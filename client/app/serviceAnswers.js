@@ -1,9 +1,6 @@
 import answers from './answers';
 
-
-var appModule = angular.module("app");
-
-appModule.factory("magicService", function () {
+function magicService() {
   return {
     responde: (question) => {
       let randomIndex = (Math.floor(Math.random() * answers.lenght));
@@ -14,5 +11,5 @@ appModule.factory("magicService", function () {
       }
     }
   }
-  
-});
+}
+export default magicService

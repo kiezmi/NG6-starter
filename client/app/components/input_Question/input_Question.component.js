@@ -4,7 +4,7 @@ import './input_Question.scss';
 
 let input_QuestionComponent = {
   bindings: {
-    question:'&'
+    submit:'&'
   },
   template,
   controller
