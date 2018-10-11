@@ -18,7 +18,7 @@ const answers = [
     { type: 'negative', text: 'Mi respuesta es no' },
     { type: 'negative', text: 'Mis fuentes me dicen que no' },
     { type: 'negative', text: 'Las perspectivas no son buenas' },
-    { type: 'negative', text: 'Muy dudoso' },
+    { type: 'negative', text: 'Muy dudoso' }
 ]
 
 export default answers

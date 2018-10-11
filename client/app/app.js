@@ -9,7 +9,7 @@ import 'normalize.css';
 angular.module('app', [
     uiRouter,
     Components,
-    Respuestas
+    Respuestas,
   ])
   .config(($locationProvider) => {
     "ngInject";
